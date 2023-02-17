@@ -1,0 +1,20 @@
+#include <stdio.h>
+/**
+ * main - entry
+ *
+ * Return: 0(successful)
+ */
+int main(void)
+{
+	int x;
+
+	x = 0;
+	while
+		(x < 10) {
+			putchar(x);
+			x++;
+		}
+	putchar('\n');
+	return (0);
+
+}
