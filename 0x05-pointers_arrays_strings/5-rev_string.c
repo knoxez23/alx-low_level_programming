@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * rev_string - -Reverses astring
+ * rev_string - Reverses astring
  * @s: input string
  * Return: String in reverse
  */
