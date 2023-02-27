@@ -2,6 +2,7 @@
 
 /**
  * main - entry point
+ * rev_string - -Reverses astring
  * @s: input string
  * Return: String in reverse
  */
@@ -11,7 +12,7 @@ void rev_string(char *s)
 	int counter = 0;
 	int i;
 
-	while(s[counter] != '\0')
+	while (s[counter] != '\0')
 		counter++;
 	for (i = 0; i < counter; i++)
 	{
