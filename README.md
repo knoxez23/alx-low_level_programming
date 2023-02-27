@@ -1,1 +1,1 @@
-debugging and rubber ducky
+pointers,arrays,strings
