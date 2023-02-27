@@ -2,10 +2,9 @@
 
 /**
  * main - entry point
- * 
+ * @s: input string
  * Return: String in reverse
  */
-
 void rev_string(char *s)
 {
 	char rev = s[0];
