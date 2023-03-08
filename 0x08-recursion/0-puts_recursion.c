@@ -3,6 +3,8 @@
 /**
  * main - check the code
  *
+ * @a: The string to be printed
+ * _puts_recursion - Prints a string, followed by a new line.
  * Return: Always 0.
  */
 void _puts_recursion(char *a)
