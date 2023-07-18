@@ -1,5 +1,5 @@
 #include "main.h"
-//main: has return value of 0
+/* main: has return value of 0 */
 int main(void)
 {
 	_putchar('_');
