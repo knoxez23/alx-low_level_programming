@@ -1,5 +1,8 @@
 #include "main.h"
-/* main: has return value of 0 */
+/* main- Entry point for code
+ *
+ * Return: return value of 0 
+ */
 int main(void)
 {
 	_putchar('_');
