@@ -7,11 +7,11 @@
  */
 void jack_bauer(void)
 {
-	int h = 0;
+	int h = 0, min;
 	while (h < 24)
 	{
 		h++;
-		int min = 0;
+		min = 0;
 		while (min < 60)
 		{
 			min++;
