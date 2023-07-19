@@ -24,21 +24,20 @@ void times_table(void)
                 if (result < 10)
                 {
                     _putchar(' ');
-                    _putchar(' '); /*Two spaces for single-digit numbers*/
+                    _putchar(' ');
                 }
-                else if (result >= 10 && result < 100)
+                else
                 {
-                    _putchar(' '); /*One space for two-digit numbers*/
+                    _putchar(' ');
                 }
 
-                _putchar((result / 10) + '0');
-                _putchar((result % 10) + '0');
+                _putchar((result) + '0');
             }
 
             if (j != 9)
             {
-                _putchar(','); /*Print comma for all columns except the last one*/
-                _putchar(' '); /*Print space after the comma*/
+                _putchar(',');
+                _putchar(' ');
             }
         }
         _putchar('\n');
