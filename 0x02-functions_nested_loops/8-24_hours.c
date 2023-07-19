@@ -11,11 +11,9 @@ void jack_bauer(void)
 
 	while (h < 24)
 	{
-		h++;
 		min = 0;
 		while (min < 60)
 		{
-			min++;
 			_putchar((h / 10) + '0'); /*Print the tens digit of the hour*/
 			_putchar((h % 10) + '0'); /*Print the ones digit of the hour*/
 			_putchar(':');
@@ -23,6 +21,9 @@ void jack_bauer(void)
 			_putchar((min % 10) + '0'); /*Print the ones digit of the hour*/
 			_putchar('\n');
 
+			min++;
+
 		}
+		h++;
 	}
 }
