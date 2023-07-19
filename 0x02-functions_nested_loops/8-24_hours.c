@@ -7,10 +7,14 @@
  */
 void jack_bauer(void)
 {
-	for (int h = 0; h < 24; h++)
+	int h = 0;
+	while (h < 24)
 	{
-		for(int min = 0; min < 60; min++)
+		h++;
+		int min = 0;
+		while (min < 60)
 		{
+			min++;
 			_putchar(h);
 			_putchar(':');
 			_putchar(min);
