@@ -8,6 +8,7 @@
 void jack_bauer(void)
 {
 	int h = 0, min;
+
 	while (h < 24)
 	{
 		h++;
@@ -21,6 +22,7 @@ void jack_bauer(void)
 			_putchar((min / 10) + '0'); //Print the tens digit of the hour
 			_putchar((min % 10) + '0'); //Print the ones digit of the hour
 			_putchar('\n');
+
 		}
 	}
 }
