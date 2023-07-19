@@ -17,19 +17,18 @@ void times_table(void)
 
             if (j == 0)
             {
-                _putchar('0'); // Print '0' for the first column
+                _putchar('0');
             }
             else
             {
-                // Print spaces before the number to align the table
                 if (result < 10)
                 {
                     _putchar(' ');
-                    _putchar(' '); // Two spaces for single-digit numbers
+                    _putchar(' '); /*Two spaces for single-digit numbers*/
                 }
                 else if (result >= 10 && result < 100)
                 {
-                    _putchar(' '); // One space for two-digit numbers
+                    _putchar(' '); /*One space for two-digit numbers*/
                 }
 
                 _putchar((result / 10) + '0');
@@ -38,8 +37,8 @@ void times_table(void)
 
             if (j != 9)
             {
-                _putchar(','); // Print comma for all columns except the last one
-                _putchar(' '); // Print space after the comma
+                _putchar(','); /*Print comma for all columns except the last one*/
+                _putchar(' '); /*Print space after the comma*/
             }
         }
         _putchar('\n');
