@@ -2,6 +2,7 @@
 
 /**
  * is_upper - function checks for uppercase character
+ * @c: character being checked
  *
  * Return: 1 for uppercase, 0 otherwise
  */
