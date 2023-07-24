@@ -5,15 +5,17 @@
  * @str
  *
  */
-void puts2(char *str)
+void puts2(char *s)
 {
-	int i = 0;
+    int a;
 
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i += 2;
-	}
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        while (i % 2 == 0)
+        {
+            _putchar(s[i]);
+        }
+    }
 
-	_putchar('\n');
+    _putchar('\n');
 }
