@@ -3,21 +3,19 @@
 /**
  * print_rev - print string in reverse
  * @s: string to be reversed
- * @i: loop variable
- * @j: loop vsriable
  *
  * Return: void
  */
 void print_rev(char *s)
 {
-	int length, i, j;
+	int length = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[length] != '\0')
 	{
 		length++;
 	}
 
-	for (j = 0; s[length] >= 0; j++)
+	for (int j = length - 1; j >= 0; j--)
 	{
 		_putchar(s[length]);
 	}
