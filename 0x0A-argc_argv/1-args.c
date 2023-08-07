@@ -6,7 +6,7 @@
  * @argc: argument count
  * @argv: arguments array
  *
- * return:0
+ * Return:0
  */
 
 int main(int argc, char *argv[])
