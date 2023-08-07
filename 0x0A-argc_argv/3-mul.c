@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int result;
+	int i, result;
 
 	if (argc == 1 || argc == 2)
 	{
@@ -20,10 +20,13 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int num1 = atoi(argv[1]);
-		int num2 = atoi(argv[2]);
+		result = 1;
 
-		result = num1 * num2;
+		for (i = 1; i < 3; i++)
+		{
+			result *= atoi(argv[i]);
+		}
+		
 		printf("%d", result);
 	}
 
