@@ -11,12 +11,12 @@
 
 char *_strdup(char *str)
 {
+	char *duplicate;
+	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	char *duplicate;
 
 	duplicate = (char *)malloc((strlen(str) + 1) * sizeof(char));
 	if (duplicate == NULL)
