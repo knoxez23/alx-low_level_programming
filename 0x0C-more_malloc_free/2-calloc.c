@@ -34,7 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	size_t total_size = nmemb * size;
+	unsigned int total_size = nmemb * size;
 	void *ptr = malloc(total_size);
 
 	if (ptr == NULL)
