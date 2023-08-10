@@ -16,7 +16,6 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 	if (!ptr)
 	{
-		printf("An error occurred\n");
 		exit(98);
 	}
 	else
