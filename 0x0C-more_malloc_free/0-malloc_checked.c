@@ -11,12 +11,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
+	void *ptr;
 
-	ptr = (int *)malloc(b * sizeof(unsigned int));
+	ptr = (void *)malloc(b * sizeof(unsigned int));
 	if (ptr == NULL)
 	{
-		printf("An error occured");
+		printf("An error occurred");
 		exit(98);
 	}
 	else
