@@ -1,7 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+/**
+ * _memset - function for putting bytes to mem
+ * @s: pointer to mem
+ * @b: what to write
+ * @n: n.o of bytes to write
+ *
+ * Return: pointer to memory
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
+}
+
 /**
  * _calloc - function allocating mem for an array malloc
  * @nmemb: array
@@ -9,6 +26,7 @@
  *
  * Return: void
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	if (nmemb == 0 || size == 0)
@@ -24,7 +42,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	memset(ptr, 0, total_size);
+	_memset(ptr, 0, total_size);
 
 	return (ptr);
 }
