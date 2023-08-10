@@ -11,9 +11,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *ptr;
+	int *ptr;
 
-	ptr = (unsigned int *)malloc(b * sizeof(unsigned int));
+	ptr = (int *)malloc(b * sizeof(unsigned int));
 	if (ptr == NULL)
 	{
 		printf("An error occured");
