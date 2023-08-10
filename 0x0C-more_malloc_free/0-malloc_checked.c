@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = malloc(b);
+	ptr = malloc(sizeof(b));
 	if (ptr == NULL)
 	{
 		printf("An error occurred");
