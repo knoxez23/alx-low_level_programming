@@ -13,10 +13,10 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = malloc(sizeof(b));
+	ptr = malloc(b);
 	if (ptr == NULL)
 	{
-		printf("An error occurred");
+		printf("An error occurred\n");
 		exit(98);
 	}
 	else
