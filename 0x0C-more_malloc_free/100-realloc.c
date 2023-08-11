@@ -1,15 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _memcpy - copy a memory area
- * @dest: a pointer to the start of the target area
- * @src: a pointer to the start of the source area
- * @n: the number of bytes to copy
+ * @dest: a pointer to start of target area
+ * @src:  pointer to start of  source area
+ * @n:  n.o of bytes to copy
  *
- * Description: This function copies n bytes from memory area src to memory
- * area dest. The memory areas must not overlap.
  *
- * Return: a pointer to dest
+ * Return: a pointer
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -23,14 +23,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 /**
  * _realloc - reallocate a memory block using malloc and free
- * @ptr: a pointer to the memory previously allocated with a call to malloc
- * @old_size: the size, in bytes, of the allocated space for ptr
- * @new_size: the new size, in bytes, of the new memory block
+ * @ptr: a pointer to  memory previously allocated with malloc
+ * @old_size: the byte size  of  allocated memory for ptr
+ * @new_size: the new byte size of  new memory block
  *
- * Description: The contents will be copied to the newly allocated space in
- * the range from the start of ptr up to the minimum of the old and new sizes.
- * If new_size is greater than old_size, the additional memory will not be
- * initialized.
  *
  * Return: If new_size is equal to old_size, do nothing and return ptr. If
  * new_size is equal to zero and ptr is not NULL, call free(ptr) and return
