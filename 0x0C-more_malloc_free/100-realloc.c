@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _memcpy - copy a memory area
@@ -13,10 +13,10 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int j = 0;
 
-	for (i = 0; i < n; ++i, ++src)
-		dest[i] = *src;
+	for (j = 0; j < n; ++j, ++src)
+		dest[j] = *src;
 	return (dest);
 }
 
@@ -39,7 +39,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new_ptr;
+	void *ptr_new;
 
 	if (new_size == old_size)
 		return (ptr);
@@ -53,12 +53,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 
-	new_ptr = malloc(new_size);
-	if (!new_ptr)
+	ptr_new = malloc(new_size);
+	if (!ptr_new)
 		return (NULL);
 
-	_memcpy(new_ptr, ptr, old_size < new_size ? old_size : new_size);
+	_memcpy(ptr_new, ptr, old_size < new_size ? old_size : new_size);
 	free(ptr);
 
-	return (new_ptr);
+	return (ptr_new);
 }
