@@ -9,13 +9,13 @@
  * struct op - Struct op
  *
  * @op: operator
- * @l: function
+ * @f: function
  */
 
 typedef struct op
 {
 	char *op;
-	int (*l)(int a, int b);
+	int (*f)(int a, int b);
 } op_t;
 
 int op_add(int a, int b);
