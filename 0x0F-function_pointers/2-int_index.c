@@ -6,8 +6,7 @@
  * @size: size
  * @cmp: comparison
  *
- * Return: index of first element and -1
- * for no element match and size <= 0
+ * Return: index of first element and -1 size <= 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -17,7 +16,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (array != NULL  && cmp != NULL)
 		{
-			
 			for (i = 0; i < size; i++)
 			{
 				if (cmp(array[i]))
